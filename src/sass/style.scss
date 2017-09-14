@@ -1,0 +1,18 @@
+//Подключение библиотек
+@import "../../node_modules/normalize.css/normalize";
+
+
+//Вспомогательные файлы, так же то что генерируется галпом
+@import "utils/variables";
+@import "utils/sprite";
+@import "utils/spriteSvg";
+@import "utils/mixins";
+@import "utils/helpers";
+@import "utils/fonts";
+
+
+//Подключение файлов из папки elements
+
+
+//Подключение основных файлов
+@import "main";
