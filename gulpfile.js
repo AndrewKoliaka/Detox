@@ -208,30 +208,22 @@ var $ = {
 gulp.task('svg:build', function () {
     return gulp.src(path.src.svgIcons)
         .pipe($.svgSprite({
+            mode: {
+                symbol: {
+                    dest: "./",
+                    sprite: 'img/sprite'
+                }
+            },
             shape: {
                 spacing: {
                     padding: 0
-                }
-            },
-            mode: {
-                css: {
-                    dest: "./",
-                    layout: "diagonal",
-                    sprite: 'img/sprite.svg',
-                    bust: false,
-                    render: {
-                        scss: {
-                            dest: "./sass/utils/_spriteSvg.scss",
-                            template: "./src/sass/tpl/_sprite-template.scss"
-                        }
-                    }
                 }
             },
             variables: {
                 mapname: "sprite"
             }
         }))
-        .pipe(gulp.dest('src'));
+        .pipe(gulp.dest('./public'));
 });
 
 
