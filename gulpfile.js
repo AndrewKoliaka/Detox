@@ -199,15 +199,9 @@ gulp.task('sprite-create:prod', function () {
 });
 
 
-var $ = {
-    gutil: require('gulp-util'),
-    svgSprite: require('gulp-svg-sprite'),
-    size: require('gulp-size')
-};
-
 gulp.task('svg:build', function () {
     return gulp.src(path.src.svgIcons)
-        .pipe($.svgSprite({
+        .pipe(svgSprite({
             mode: {
                 symbol: {
                     dest: "./",
@@ -225,7 +219,6 @@ gulp.task('svg:build', function () {
         }))
         .pipe(gulp.dest('./public'));
 });
-
 
 gulp.task('build', [
     'html:build',
