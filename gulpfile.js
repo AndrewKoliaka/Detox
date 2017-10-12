@@ -59,7 +59,6 @@ var path = {
 gulp.task('webserver', function() {
     connect.server({
         root: './public',
-        host: '0.0.0.0',
         port: 9000,
         livereload: true,
     });
