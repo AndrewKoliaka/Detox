@@ -1,0 +1,19 @@
+.logos {
+    padding-top: 80px;
+    padding-bottom: 120px;
+    background-color: $bg-gray;
+
+    &__logo {
+        max-width:100%;
+        max-height:100%;
+    }
+
+    &__logo-container {
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        margin-top: 60px;
+        width: 140px;
+        height: 80px;
+    }
+}

@@ -1,4 +1,6 @@
 //= ../../node_modules/jquery/dist/jquery.min.js
+//= ../../node_modules/waypoints/lib/jquery.waypoints.min.js
+//= ../../node_modules/jquery.counterup/jquery.counterup.js
 //= ../../node_modules/slick-carousel/slick/slick.min.js
 
 $(document)
@@ -43,5 +45,9 @@ $(document)
         $('.slider__control--next').click(function(event){
             event.preventDefault();
             slider.slick('slickNext');
+        });
+
+        $('.leader__number').counterUp({
+            time: 1000
         });
     });

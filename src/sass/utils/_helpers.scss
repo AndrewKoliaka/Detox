@@ -1,3 +1,11 @@
+.bg-dark {
+    background-color: $bg-gray !important;
+}
+
+.bg-light {
+    background-color: #ffffff !important;
+}
+
 %reset_link {
     text-decoration: none;
     outline: none;

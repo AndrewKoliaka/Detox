@@ -10,21 +10,29 @@
 @import "utils/helpers";
 @import "utils/fonts";
 
-
-//Подключение файлов из папки elrements
-
-
 //Подключение основных файлов
 @import "main";
 @import "header";
 @import "section";
 @import "team";
-@import "why-choose";
 @import "request-form";
 @import "footer";
-@import "faq";
 @import "video";
 @import "slider";
 @import "menu";
 @import "testimonials";
-@import "about-top";
+
+// styles for index page
+@import "index/home-header";
+@import "index/call-btn";
+@import "index/leader";
+@import "index/queue";
+@import "index/methods";
+@import "index/logos";
+@import "index/green-line";
+@import "index/our-help";
+
+// styles for about page
+@import "about/about-top";
+@import "about/faq";
+@import "about/why-choose";

@@ -1,0 +1,21 @@
+.our-help {
+    padding-top: 40px;
+    padding-bottom: 60px;
+    background-color: $bg-gray;
+
+    &__block {
+        margin-top: 35px;
+        text-align: center;
+    }
+
+    &__block-title {
+        font-family: $ffRoboto-Medium;
+        font-size: 1.125rem;
+        color: #282828;
+        margin-bottom: 10px;
+    }
+
+    &__text {
+        margin: 0;
+    }
+}

@@ -1,0 +1,40 @@
+.leader {
+    padding-top: 70px;
+    padding-bottom: 100px;
+    background-color: $bg-gray;
+    text-align: center;
+
+    &__name {
+        margin-top: 20px;
+        font-size: 1.125rem;
+        color: #666666;
+    }
+
+    &__stat-block {
+        margin-top: 45px;
+    }
+
+    &__achievement {
+        display: inline-block;
+        padding: 13px 20px;
+        background-color: #0076fa;
+        font-family: $ffRoboto-Bold;
+        font-size: 3.375rem;
+        color: #ffffff;
+    }
+
+    &__number {
+        display: inline-block;
+    }
+
+    &__years-text {
+        font-family: $ffRoboto-Bold;
+        color:  #ffffff;
+        font-size: 1.875rem;
+    }
+
+    &__number-description {
+        @extend .section__text;
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,38 @@
+.call-btn {
+    text-align: center;
+
+    &__link {
+        display: inline-block;
+    }
+
+    &__link-icon {
+        width: 54px;
+        height: 54px;
+        padding: 10px;
+        background-color: #588e1f;
+        fill: #c1e799;
+        box-sizing: border-box;
+    }
+
+    &__text {
+        padding: 18px 20px;
+        float: right;
+        background-color: #6aa928;
+        color: #ffffff;
+    }
+
+    &__label {
+        margin: 0;
+        padding: 0;
+        margin-top: 8px;
+        color: #c1e799;
+    }
+
+    &__label-icon {
+        width: 21px;
+        height: 25px;
+        fill: #6aa928;
+        vertical-align: middle;
+        margin-right: 3px;
+    }
+}

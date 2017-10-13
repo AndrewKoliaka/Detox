@@ -1,0 +1,20 @@
+.home-header {
+    padding-bottom: 200px;
+    background-image: url('../img/index_top_bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: -1px;
+
+    &__title {
+        padding: 0;
+        margin-top: 200px;
+    }
+
+    &__subtitle {
+        font-size: 1.125rem;
+        color: #ffffff;
+        margin-top: 25px;
+        margin-bottom: 35px;
+    }
+}
