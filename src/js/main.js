@@ -8,10 +8,18 @@ $(document)
         slider.slick({arrows: false, autoplay: true, autoplaySpeed: 5000});
 
         $('.video__play-icon').click(function (event) {
+
+            var playBtn = event.target.tagName === "svg" ? $(event.target) : $(event.target).parent();
             var video = event.target.tagName === "svg" ?
                 $(event.target).prev()[0] :
                 $(event.target).parent().prev()[0]
+
+            playBtn.hide();
             video.play();
+            
+            $(video).on('ended', function(){
+                playBtn.show();
+            });
         });
 
         $('.faq__question').click(function (event) {
