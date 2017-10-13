@@ -1,0 +1,40 @@
+.footer {
+    padding-bottom: 40px;
+    padding-top: 50px;
+    background-color: #2e3947;
+    color: #758496;
+
+    .footer__list {
+        list-style: none;
+        vertical-align: middle;
+    }
+
+    .footer__list-element {
+        display: inline-block;
+        margin-left: 20px;
+
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+
+    .footer__list-link {
+        vertical-align: middle;
+
+        &:hover {
+            color: #ffffff;
+        }
+    }
+
+    &__social-icon {
+        height: 20px;
+        width: 20px;
+        margin-left: 10px;
+        fill: #758496;
+        vertical-align: middle;
+        
+        &:hover {
+            fill: #ffffff;
+        }
+    }
+}

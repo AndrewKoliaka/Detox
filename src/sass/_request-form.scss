@@ -1,0 +1,46 @@
+.request-form {
+    padding-top: 60px;
+    padding-bottom: 75px;
+
+    &__input-group {
+        display: block;
+        margin-top: 32px;
+        text-align: center;
+    }
+
+    &__input {
+        display: inline-block;
+        margin-left: 20px;
+        padding: 15px 10px;
+        min-width: 267px;
+        border: 1px solid #a7a7a7;
+
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+
+    &__submit {
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px 80px;
+        color: #ffffff;
+        border: none;
+        background-color: #6aa928;
+    }
+
+    &__label {
+        margin-top: 10px;
+        color: #adadad;
+        text-align: center;
+    }
+
+    &__label-icon {
+        width: 14px;
+        height: 17px;
+        margin-right: 5px;
+        fill: #adadad;
+        vertical-align: middle;
+    }
+}
