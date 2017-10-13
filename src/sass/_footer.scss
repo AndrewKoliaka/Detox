@@ -4,12 +4,12 @@
     background-color: #2e3947;
     color: #758496;
 
-    .footer__list {
+    &__list {
         list-style: none;
         vertical-align: middle;
     }
 
-    .footer__list-element {
+    &__list-element {
         display: inline-block;
         margin-left: 20px;
 
@@ -18,7 +18,7 @@
         }
     }
 
-    .footer__list-link {
+    &__list-link {
         vertical-align: middle;
 
         &:hover {
@@ -32,7 +32,7 @@
         margin-left: 10px;
         fill: #758496;
         vertical-align: middle;
-        
+
         &:hover {
             fill: #ffffff;
         }

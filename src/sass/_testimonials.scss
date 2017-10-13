@@ -1,0 +1,62 @@
+.testimonials {
+    padding-top: 70px;
+    padding-bottom: 75px;
+    background-color: $bg-gray;
+
+    &__one {
+        margin-top: 30px;
+    }
+
+    &__name {
+        font-family: $ffRoboto-Medium;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+
+    &__rank {
+        margin-top: 7px;
+    }
+
+    &__ago {
+        color: #a5a5a5;
+        font-size: .75rem;
+        text-align: left;
+        vertical-align: middle;
+    }
+
+    &__stars-container {
+        margin-left: 5px;
+    }
+
+    &__star {
+        fill:  #f6b033;
+        width: 15px;
+        height: 15px;
+        vertical-align: middle;
+    }
+
+    &__text {
+        color: #666666;
+        font-size: .9rem;
+        line-height: 1.5rem;
+    }
+
+    &__read-more-btn {
+        color: #f6b033;
+    }
+
+    &__no-avatar-wrapper {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background-color:  #0265d4;
+        text-align: center;
+    }
+
+    &__first-letter {
+        font-family: $ffRoboto-Bold;
+        color:  #ffffff;
+        font-size: 2.5rem;
+        line-height: 80px;
+    }
+}

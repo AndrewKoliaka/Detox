@@ -1,0 +1,30 @@
+.slider {
+    margin-top: 30px;
+
+    &__slide:focus {
+        border: none;
+        outline: none;
+    }
+
+    &__control-container {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    &__control {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        cursor: pointer;
+        fill: gray;
+    
+        &--prev {
+            transform: rotate(180deg);
+        }
+
+        &--next {
+            margin-left: 15px;
+        }
+    }
+}
