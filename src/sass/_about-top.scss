@@ -1,0 +1,28 @@
+.about-top {
+    padding: 75px 0;
+
+    &__list {
+        padding: 0;
+        padding-left: 20px;
+        color: #0076fa;
+    }
+
+    &__img-container {
+        position: relative;
+    }
+
+    &__img {
+
+        &--top {
+            position: absolute;
+            z-index: 2;
+        }
+
+        &--bottom {
+            position: absolute;
+            top: 200px;
+            right: 13px;
+            z-index: 1;
+        }
+    }
+}
