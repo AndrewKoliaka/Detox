@@ -3,8 +3,49 @@ $dark-blue: #224e84;
 .menu {
     position: relative;
     background-color: #ffffff;
-    overflow: hidden;
     text-align: center;
+    transition: all 2s;
+
+    &--scroll {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 9999;
+        box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.3);
+
+        .menu__list-element {
+            padding: 30px 0;
+        }
+
+        .menu__logo, .menu__email-link {
+            display: none;
+        }
+
+        .menu__list {
+            margin-left: 15px;
+        }
+
+        .menu__step-link {
+            display: inline-block;
+            padding: 30px 45px;
+            background-color: #6aa928;
+            color: #ffffff;
+            text-transform: uppercase;
+        }
+
+        .menu__connection-block {
+            padding: 0;
+            background-color: transparent;
+        }
+
+        .menu__call-link {
+            display: inline-block;
+            margin-right: 15px;
+            font-size: 1.25rem;
+            color: #282828
+        }
+    }
 
     &__logo {
         position: absolute;
@@ -26,37 +67,35 @@ $dark-blue: #224e84;
     }
 
     &__list {
+        position: relative;
         margin-left: 170px;
-        padding: 39px 0;
         list-style: none;
-        
-    }
-
-    &__title {
-        width: 100%;
-        font-family: $ffRoboto-Medium;
-        font-size: 2.625rem;
-        color: #ffffff;
-        text-align: center;
     }
 
     &__list-element {
         display: inline-block;
         margin-left: 20px;
         line-height: 1rem;
-    }
-
-    &__link {
-        color: #6f6f6f;
-        transition: tr3s;
+        padding: 40px 0;
 
         &:hover {
-            color: $dark-blue;
+            .menu__link {
+                color: $dark-blue;
+            }
 
             .menu__link-icon {
                 fill: black;
             }
         }
+
+        &:hover > .menu__list-l2 {
+            display: block;
+        }
+    }
+
+    &__link {
+        color: #6f6f6f;
+        transition: tr3s;
     }
 
     &__link-icon {
@@ -66,23 +105,60 @@ $dark-blue: #224e84;
         fill: #6f6f6f;
     }
 
-    &__connection-block {
+    &__list-l2 {
         position: absolute;
+        display: none;
+        list-style: none;
+        margin-top: 20px;
+        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+    }
+
+    &__list-l2-element {
+        text-align: left;
+        min-width: 200px;
+        background-color: #ffffff;
+    }
+
+    &__list-l2-link {
+        display: inline-block;
+        padding: 10px;
+        width: 100%;
+        height: 100%;
+        color: #6f6f6f;
+        transition: all .2s;
+
+        &:hover {
+            color: #ffffff;
+            background-color: $dark-blue;
+        }
+    }
+
+    &__right-wrapper {
+        position: absolute;
+        height: 100%;
         right: 0;
         top: 0;
+        margin-left: 20px;
+        overflow: hidden;
+    }
+
+    &__connection-block {
+        position: relative;
         z-index: 1;
         height: 100%;
         padding-top: 30px;
         padding-right: 16px;
+        margin-left: 50px;
         background-color: $dark-blue;
         color: #ffffff;
         text-align: right;
         
+        
         &::before {
             content: ' ';
             position: absolute;
-            top: 15px;
-            left: -15px;
+            top: 20px;
+            left: -17px;
             z-index: -1;
             width: 100%;
             height: 120%;
@@ -92,6 +168,7 @@ $dark-blue: #224e84;
     }
 
     &__call-link {
+        display: block;
         font-size: 1.125rem;
         color: inherit;
 
@@ -108,5 +185,9 @@ $dark-blue: #224e84;
         &:hover {
             text-decoration: underline;
         }
+    }
+
+    &__step-link {
+        display: none;
     }
 }

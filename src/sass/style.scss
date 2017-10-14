@@ -21,8 +21,9 @@
 @import "slider";
 @import "menu";
 @import "testimonials";
+@import "address";
 
-// styles for index page
+// styles for sections that are contained only in index page
 @import "index/home-header";
 @import "index/call-btn";
 @import "index/leader";
@@ -31,8 +32,9 @@
 @import "index/logos";
 @import "index/green-line";
 @import "index/our-help";
+@import "index/awards";
 
-// styles for about page
+// styles for sections that are contained only in about page
 @import "about/about-top";
 @import "about/faq";
 @import "about/why-choose";

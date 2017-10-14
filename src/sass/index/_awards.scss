@@ -1,0 +1,43 @@
+.awards {
+    padding-top: 100px;
+    padding-bottom: 90px;
+    background-image: url('../img/index_bottom_bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #ffffff;
+
+    &__left-part {
+        text-align: left;
+    }
+
+    &__right-part {
+        text-align: center;
+    }
+
+    &__title {
+        text-align: left;
+    }
+
+    &__text {
+        font-size: 1.125rem;
+        line-height: 1.5rem;
+    }
+
+    &__list {
+        margin-bottom: 30px;
+    }
+
+    &__list-item {
+        line-height: 2.25rem;
+        margin-left: 20px;
+    }
+
+    &__logo {
+        margin-bottom: 80px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

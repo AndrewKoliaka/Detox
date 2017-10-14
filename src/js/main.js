@@ -5,6 +5,8 @@
 
 $(document)
     .ready(function () {
+        var mainMenu = $('#top-menu');
+        var menuHeight = mainMenu.outerHeight();
         var slider = $('.slider__body');
 
         slider.slick({arrows: false, autoplay: true, autoplaySpeed: 5000});
@@ -49,5 +51,15 @@ $(document)
 
         $('.leader__number').counterUp({
             time: 1000
+        });
+
+        $(window).on('scroll', function() {
+            if($(this).scrollTop() > menuHeight + 20) {
+                mainMenu.addClass('menu--scroll');
+                $('header').css('padding-top', menuHeight + 'px');
+            } else {
+                mainMenu.removeClass('menu--scroll');
+                $('header').css('padding-top', '0');
+            }
         });
     });
