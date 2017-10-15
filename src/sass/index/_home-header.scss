@@ -6,9 +6,17 @@
     background-position-x: center;
     background-position-y: -1px;
 
+    @include respond-to (tablet) {
+        padding-bottom: 50px;
+    }
+
     &__title {
         padding: 0;
         margin-top: 200px;
+
+        @include respond-to (tablet) {
+            margin-top: 50px;
+        }
     }
 
     &__subtitle {

@@ -7,12 +7,20 @@
     background-position: center;
     color: #ffffff;
 
+    @include respond-to (tablet) {
+        padding: 40px 0; 
+    }
+
     &__left-part {
-        text-align: left;
+        text-align: left;        
     }
 
     &__right-part {
         text-align: center;
+
+        @include respond-to (tablet) {
+            display: table;
+        }
     }
 
     &__title {
@@ -35,6 +43,14 @@
 
     &__logo {
         margin-bottom: 80px;
+        max-width: 100%;
+        max-width: 100%;
+
+        @include respond-to (tablet) {
+            display: table-cell;
+            vertical-align: middle;
+            margin: 20px auto;
+        }
 
         &:last-child {
             margin-bottom: 0;

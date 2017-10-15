@@ -2,10 +2,18 @@
     padding-top: 70px;
     padding-bottom: 80px;
 
+    @include respond-to (tablet) {
+        padding: 40px 0;
+    }
+
     &__list {
         margin-top: 40px;
         width: 100%;
         list-style: none;
+
+        @include respond-to (phone-lend) {
+            padding: 0 10px;
+        }
     }
 
     &__list-element {

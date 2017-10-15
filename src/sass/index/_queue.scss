@@ -5,6 +5,10 @@
     font-size: 0;
     text-align: center;
 
+    @include respond-to (tablet) {
+        background-color: #ffffff;
+    }
+
     &::before {
         content: ' ';
         position: absolute;
@@ -14,6 +18,10 @@
         width: 50%;
         height: 100%;
         background-color: #0265d4;
+
+        @include respond-to (tablet) {
+            background-color: #ffffff;
+        }
     }
 
     &__item {
@@ -22,12 +30,36 @@
         font-size: 2.25rem;
         color: #ffffff;
 
+        @include respond-to (tablet) {
+            padding: 20px 35px;
+            font-size: 2rem;
+            width: 50%;
+        }
+
+        @include respond-to (phone-lend) {
+            padding: 10px 15px;
+            font-size: 1rem;
+        }
+
+
+        @media screen and (max-width: 1150px) {
+            padding: 30px 50px;
+        }
+
         &--answers {
             background-color: #388eef;
         }
 
         &--change {
             background-color: #38b5ef;
+        }
+
+        &--recovery {
+            background-color: #2190c3;
+        }
+
+        &--hope {
+            background-color: #0265d4;
         }
     }
 }

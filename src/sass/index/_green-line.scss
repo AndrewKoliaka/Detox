@@ -1,4 +1,8 @@
 .green-line {
     background-color: #6aa928;
     padding: 50px 0;
+
+    @include respond-to (tablet) {
+        padding: 20px 0;
+    }
 }

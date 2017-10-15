@@ -22,3 +22,9 @@ ul {
 address {
     font-style: normal;
 }
+
+br {
+    @include respond-to (tablet) {
+        display: none;
+    }
+}

@@ -12,6 +12,10 @@
         background-color: #588e1f;
         fill: #c1e799;
         box-sizing: border-box;
+
+        @include respond-to (phone-lend) {
+            display: none;
+        }
     }
 
     &__text {
@@ -19,5 +23,9 @@
         float: right;
         background-color: #6aa928;
         color: #ffffff;
+
+        @include respond-to (phone-lend) {
+            padding: 10px 12px;
+        }
     }
 }

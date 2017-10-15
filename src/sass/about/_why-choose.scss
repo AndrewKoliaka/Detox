@@ -4,6 +4,10 @@
     text-align: center;
     color: #ffffff;
 
+    @include respond-to (tablet) {
+        padding: 20px 0;
+    }
+
     &__quote {
         margin-top: 25px;
         color: inherit;

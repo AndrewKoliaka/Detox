@@ -3,6 +3,10 @@
     padding-bottom: 120px;
     background-color: $bg-gray;
 
+    @include respond-to (tablet) {
+        padding: 40px 0;
+    }
+
     &__logo {
         max-width:100%;
         max-height:100%;
@@ -15,5 +19,13 @@
         margin-top: 60px;
         width: 140px;
         height: 80px;
+
+        @include respond-to (tablet) {
+            width: 100px;
+        }
+
+        @include respond-to (phone-lend) {
+            width: 150px;
+        }
     }
 }

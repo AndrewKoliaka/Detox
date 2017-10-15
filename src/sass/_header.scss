@@ -4,6 +4,10 @@
     background-repeat: no-repeat;
     text-align: center;
 
+    @include respond-to(tablet) {
+        padding-top: 70px;
+    }
+
     &__title {
         margin: 0;
         padding: 40px 0;
@@ -13,5 +17,9 @@
         font-weight: 500;
         color: #ffffff;
         text-align: center;
+
+        @include respond-to (tablet) {
+            font-size: 2.1rem;
+        }
     }
 }

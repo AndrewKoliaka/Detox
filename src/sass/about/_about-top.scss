@@ -1,6 +1,10 @@
 .about-top {
     padding: 75px 0;
 
+    @include respond-to (tablet) {
+        padding: 40px 0;
+    }
+
     &__list {
         padding-left: 20px;
         color: #0076fa;
@@ -8,13 +12,24 @@
 
     &__img-container {
         position: relative;
+
+        @media screen and (max-width: 768px) {
+            text-align: center;
+        }
     }
 
     &__img {
 
+        max-width: 100%;
+        max-height: 100%;
+
         &--top {
             position: absolute;
             z-index: 2;
+
+            @media screen and (max-width: 1200px) {
+                position: static;
+            }
         }
 
         &--bottom {
@@ -22,6 +37,10 @@
             top: 200px;
             right: 13px;
             z-index: 1;
+
+            @media screen and (max-width: 1200px) {
+                position: static;
+            }
         }
     }
 }

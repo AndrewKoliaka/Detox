@@ -4,15 +4,25 @@
         @extend .post__title;
         margin: 0;
         margin-bottom: 15px;
+
+        @include respond-to (tablet) {
+            margin-top: 40px;
+            text-align: center;
+        }
     }
 
     &__banner {
         padding: 33px 24px;
         background-image: url('../img/call_img.jpg');
+        background-repeat: no-repeat;
         background-position: center;
         font-family: $ffRoboto-Medium;
         font-size: 2.25rem;
         color: #ffffff;
+
+        @include respond-to (tablet) {
+            display: none;
+        }
     }
 
     &__banner-number {

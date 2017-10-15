@@ -1,8 +1,21 @@
 .methods {
     padding: 100px 0;
 
+    @include respond-to (tablet) {
+        padding: 50px 0;
+    }
+
     &__title {
         text-align: right;
+
+        @include respond-to(phone-lend) {
+            text-align: center;
+        }
+    }
+
+    &__img {
+        max-height: 100%;
+        max-width: 100%;
     }
 
     &__text-bold {
@@ -13,14 +26,26 @@
     &__left-part {
         padding-top: 91px;
         text-align: right;
+
+        @include respond-to (tablet) {
+            padding-top: 0;
+        }
+
+        @include respond-to (phone-lend) {
+            text-align: center;
+        }
     }
 
     &__right-container {
         position: relative;
         left: 40px;
+
+        @include respond-to (tablet) {
+            left: 0;
+        }
     }
 
-    &__icon-wrapper {
+    &__icon-container {
         position: absolute;
         left: -22.5px;
         width: 45px;
@@ -28,6 +53,10 @@
         background-color:  #0265d4;
         text-align: center;
         line-height: 45px;
+
+        @include respond-to (tablet) {
+            display: none;
+        }
 
         &::before {
             content: ' ';

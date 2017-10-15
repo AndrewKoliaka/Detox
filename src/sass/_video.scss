@@ -2,6 +2,10 @@
     position: relative;
     margin-top: 50px;
 
+    @include respond-to (tablet) {
+        margin-top: 20px;
+    }
+
     &__player {
         width: 100%;
     }

@@ -4,9 +4,28 @@
     background-color: #2e3947;
     color: #758496;
 
+    @include respond-to (tablet) {
+        padding: 20px 0;
+    }
+
     &__list {
         list-style: none;
         vertical-align: middle;
+
+        @include respond-to (phone-lend) {
+            width: 100%;
+            text-align: center;
+        }
+
+        &--social {
+
+            @include respond-to (tablet) {
+                .footer__list-element {
+                    display: inline-block;
+                    margin: 35px 10px;
+                }
+            }
+        }
     }
 
     &__list-element {
@@ -16,9 +35,27 @@
         &:first-child {
             margin-left: 0;
         }
+
+        @media screen and (max-width: 1200px) {
+            margin-left: 10px;
+        }
+
+        @include respond-to (tablet) {
+            display: block;
+            margin-left: 20px;
+
+            &:first-child {
+                margin-left: 20px;
+            }
+        }
+
+        @include respond-to (phone-lend) {
+            margin-top: 20px;
+        }
     }
 
     &__list-link {
+        display: inline-block;
         vertical-align: middle;
         transition: $tr3s;
 
@@ -30,7 +67,6 @@
     &__social-icon {
         height: 20px;
         width: 20px;
-        margin-left: 10px;
         fill: #758496;
         vertical-align: middle;
 

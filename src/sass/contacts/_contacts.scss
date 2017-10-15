@@ -3,6 +3,22 @@
     padding-bottom: 80px;
     text-align: left;
 
+    @include respond-to (tablet) {
+        padding: 40px 0;
+    }
+
+    &__section {
+
+        &--form {
+            padding-left: 70px;
+            
+            @include respond-to (tablet) {
+                padding-left: 0;
+                margin-top: 40px;
+            }
+        }
+    }
+
     &__title {
         @extend .section__title;
         padding: 0;
@@ -54,10 +70,6 @@
     &__address {
         @extend .section__text;
         margin-top: 20px;
-    }
-
-    &__form-section {
-        padding-left: 70px;
     }
 
     .privacy-label {
