@@ -13,12 +13,11 @@
     }
 
     &__logo-container {
-        display:flex;
-        justify-content:center;
-        align-items:center;
-        margin-top: 60px;
         width: 140px;
         height: 80px;
+        margin-top: 60px;
+        margin-right: auto;
+        margin-left: auto;
 
         @include respond-to (tablet) {
             width: 100px;

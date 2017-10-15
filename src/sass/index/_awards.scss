@@ -17,10 +17,6 @@
 
     &__right-part {
         text-align: center;
-
-        @include respond-to (tablet) {
-            display: table;
-        }
     }
 
     &__title {
@@ -41,14 +37,20 @@
         margin-left: 20px;
     }
 
-    &__logo {
+    &__logo-container {
         margin-bottom: 80px;
+
+        @include respond-to (tablet) {
+            margin-bottom: 0;
+            margin-top: 20px;
+        }
+    }
+
+    &__logo {
         max-width: 100%;
         max-width: 100%;
 
         @include respond-to (tablet) {
-            display: table-cell;
-            vertical-align: middle;
             margin: 20px auto;
         }
 
