@@ -32,6 +32,11 @@ $dark-blue: #224e84;
             background-color: #6aa928;
             color: #ffffff;
             text-transform: uppercase;
+            transition: $tr3s;
+
+            &:hover {
+                background-color: #f4d130;
+            }
         }
 
         .menu__connection-block {
@@ -87,9 +92,20 @@ $dark-blue: #224e84;
 
     &__logo {
         position: absolute;
-        left: 0;
+        left: 10px;
         top: 0;
         z-index: 1;
+
+        &::before {
+            content: ' ';
+            position: absolute;
+            left: -10px;
+            top: 0;
+            bottom: 4px;
+            background-color: $dark-blue;
+            width: 20px;
+            z-index: -1;
+        }
 
         &::after {
             content: ' ';
@@ -135,7 +151,7 @@ $dark-blue: #224e84;
         display: inline-block;
         margin-left: 20px;
         line-height: 1rem;
-        padding: 40px 0;
+        padding: 41px 0;
 
         @include respond-to(phone-lend) {
             display: block;

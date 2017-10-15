@@ -23,6 +23,10 @@
             margin-left: 0;
         }
 
+        &:active {
+            border-color: #6aa928;
+        }
+
         @include respond-to (tablet) {
             min-width: 200px;
         }
@@ -43,6 +47,11 @@
         color: #ffffff;
         border: none;
         background-color: #6aa928;
+        transition: $tr3s;
+        
+        &:hover {
+            background-color: #f4d130;
+        }
 
         @include respond-to (phone-lend) {
             margin-right: 0;

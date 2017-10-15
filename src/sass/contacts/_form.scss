@@ -6,6 +6,10 @@
         padding: 12px 14px;
         border: 1px solid #a7a7a7;
 
+        &:active {
+            border-color: #6aa928;
+        }
+
         &::placeholder {
             color: #9b9b9b;
         }
@@ -28,5 +32,10 @@
         border: none;
         outline: none;
         cursor: pointer;
+        transition: $tr3s;
+
+        &:hover {
+            background-color: #609d1f;
+        }
     }
 }

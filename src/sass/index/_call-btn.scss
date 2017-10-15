@@ -3,6 +3,12 @@
 
     &__link {
         display: inline-block;
+
+        &:hover {
+            .call-btn__text {
+                background-color: #609d1f;
+            }   
+        }
     }
 
     &__link-icon {
@@ -23,6 +29,7 @@
         float: right;
         background-color: #6aa928;
         color: #ffffff;
+        transition: $tr3s;
 
         @include respond-to (phone-lend) {
             padding: 10px 12px;

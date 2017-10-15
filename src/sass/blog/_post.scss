@@ -20,11 +20,22 @@
     }
 
     &__title {
+        display: inline-block;
         margin-top: 12px;
-        font-family: $ffRoboto-Medium;
-        font-size: 1.5rem;
-        font-weight: 500;
-        color: #282828;
+
+        &:hover {
+            h2 {
+                color: #0265d4;
+            }
+        }
+
+        h2 {
+            margin: 0;
+            font-family: $ffRoboto-Medium;
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: #282828;
+        }
     }
 
     &__subtitle {
@@ -80,7 +91,7 @@
         color: #0265d4;
 
         &:hover {
-            text-decoration: underline;
+            color: #044c9c;
         }
     }
 
