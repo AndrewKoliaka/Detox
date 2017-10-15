@@ -20,6 +20,7 @@
 
     &__list-link {
         vertical-align: middle;
+        transition: $tr3s;
 
         &:hover {
             color: #ffffff;

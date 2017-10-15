@@ -1,0 +1,19 @@
+.post-icon-text {
+    display: inline-block;
+    margin-right: 15px;
+    color: #a3a3a3;
+    font-size: .875rem;
+    line-height: 1.5rem;
+    
+    &__icon {
+        max-width: 19px;
+        max-height: 19px;
+        fill: #a3a3a3;
+        vertical-align: -3px;
+    }
+
+    &__text {
+        margin-left: 4px;
+        white-space: nowrap;
+    }
+}

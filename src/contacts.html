@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+
+        //= template/menu.html
+
+        <h1 class="header__title">Contact Us</h1>
+    </header>
+
+    <main class="contacts">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <section class="section">
+                        <h2 class="contacts__title">Contact The Detox of South Florida</h2>
+                        <p class="section__text">Below you’ll find a few ways you can reach us. Our medical detox center is open 24/7, 365 days a
+                            year and there is always a helpful staff member available to talk.</p>
+                        <div class="contacts__subtitle">Contacts</div>
+                        <ul class="contacts__list">
+                            <li class="contacts__list-item">
+                                <svg class="contacts__icon">
+                                    <use xlink:href="img/sprite.svg#phone"></use>
+                                </svg>
+                                <span class="contacts__text-name">
+                                    Main Phone: <a class="contacts__link" href="tel:(863) 623-4923">(863) 623-4923</a>
+                                </span>
+                            </li>
+                            <li class="contacts__list-item">
+                                <svg class="contacts__icon">
+                                    <use xlink:href="img/sprite.svg#calendar-check-o"></use>
+                                </svg>
+                                <span class="contacts__text-name">
+                                    Admissions: <a class="contacts__link" href="tel:(863) 623-4923">(863) 623-4923</a> 
+                                </span>
+                            </li>
+                            <li class="contacts__list-item">
+                                <svg class="contacts__icon">
+                                    <use xlink:href="img/sprite.svg#email"></use>
+                                </svg>
+                                <span class="contacts__text-name">
+                                    Email: <a class="contacts__link" href="mailto:info@detoxofsouthflorida.com">info@detoxofsouthflorida.com</a>
+                                </span>
+                            </li>
+                        </ul>
+                        <div class="contacts__address-block row">
+                            <div class="col-5">
+                                <div class="section__subtitle">West Palm Beach</div>
+                                <address class="contacts__address">
+                                    10581 Versailles blvd<br> Wellington Fl 33449
+                                </address>
+                            </div>
+                            <div class="col-5">
+                                <div class="section__subtitle">Miami</div>
+                                <address class="contacts__address">
+                                    41 Tamiami canal Rd<br> Miami Fl 33144
+                                </address>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="col-lg-6">
+                    <section class="contacts__form-section section">
+                        <h2 class="contacts__title">Get In Touch!</h2>
+                        <p class="section__text">Please! contact us if you have any queries.</p>
+                        <form class="form" action="#" method="POST">
+                            <input class="form__input" type="text" name="username" required placeholder="Enter your name">
+                            <input class="form__input" type="text" name="phone" required placeholder="Enter your phone number">
+                            <input class="form__input" type="email" name="email" required placeholder="Enter your e-mail">
+                            <input class="form__input" type="text" name="address" required placeholder="Enter your living address">
+                            <textarea class="form__textarea" name="message" rows="5" placeholder="Enter your message" spellcheck="true" min="15" max="100"></textarea>
+                            <input class="form__submit" type="submit" value="Send My Question">
+
+                            //= template/privacy-label.html
+                            
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    //= template/address.html
+
+    //= template/footer.html

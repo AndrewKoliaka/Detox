@@ -14,6 +14,13 @@
         }
     }
 
+    &__subtitle {
+        font-family: $ffRoboto-Medium;
+        font-size: 1.5rem;
+        color: #282828;
+        font-weight: 500;
+    }
+
     &__text {
         font-family: $ffRoboto-Regular;
         font-size: 1rem;

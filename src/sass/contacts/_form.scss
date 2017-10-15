@@ -1,0 +1,32 @@
+.form {
+    &__input {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 12px 14px;
+        border: 1px solid #a7a7a7;
+
+        &::placeholder {
+            color: #9b9b9b;
+        }
+    }
+
+    &__textarea {
+        @extend .form__input;
+        min-width: 100%;
+    }
+
+    &__submit {
+        margin-top: 10px;
+        margin-right: 15px;
+        padding: 20px 40px;
+        font-family: $ffRoboto-Medium;
+        font-size: 1rem;
+        font-weight: 500;
+        color: #ffffff;
+        background-color: #6aa928;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blog</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+
+        //= template/menu.html
+
+        <h1 class="header__title">Blog</h1>
+    </header>
+
+    <main class="blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <article class="post">
+                        <div class="post__img-container">
+                            <img class="post__img" src="img/blog1.jpg" alt="Hartford Healthcare Rehabilitation Coverage">
+                        </div>
+                        <div class="post__info">
+
+                            <div class="post-icon-text">
+                                <svg class="post-icon-text__icon">
+                                    <use xlink:href="img/sprite.svg#calendar"></use>
+                                </svg>
+                                <span class="post-icon-text__text">Sep 13, 2017</span>
+                            </div>
+
+                            <div class="post-icon-text">
+                                <svg class="post-icon-text__icon">
+                                    <use xlink:href="img/sprite.svg#user"></use>
+                                </svg>
+                                <span class="post-icon-text__text">by Detox of South Florida</span>
+                            </div>
+                        </div>
+                        <h2 class="post__title">Hartford Healthcare Rehabilitation Coverage | West Palm Beach</h2>
+                        <p class="post__text">Hartford Healthcare’s behavioral health network focuses on helping people struggling with addiction.
+                            Their program is the Medication Assisted Treatment Close to Home or MATCH. MATCH assists the
+                            rehabilitation for patients of all ages. Studies have made a link between behavioral issues and
+                            addiction. Drugs and alcohol are often used as a gateway mechanism. Sometimes, people also use
+                            them to function. When people become dependent on the substance, it becomes addiction. Addiction
+                            is a slippery slope once it starts. If you’re not a member of Hartford Healthcare’s insurance,
+                            it’s not too late. Even if you already have an existing addiction, Hartford encourages you to
+                            seek them for help. Hartford’s representatives will find a suitable compromise.</p>
+                        <div class="post__subtitle">How do you start?</div>
+                        <p class="post__text">First is to consult your physician. They will give you a full work-up, which Hartford will covered.
+                            Your physician will then provide their diagnosis. After the diagnosis, you can contact Hartford’s
+                            addiction specialists to start your program. For inpatient cases, consult with Hartford about
+                            the centers closest to you. They need to confirm if the center is Hartford accredited.</p>
+                        <div class="post__subtitle">Programs Hartford Healthcare Covers</div>
+                        <p class="post__text">
+                            Rehabilitation is different for each person. A method that works on one person may not work for another. A specialist’s advice
+                            can recommend certain programs and the centers will adjust it for you. The general programs Hartford
+                            covers are as follows:
+                        </p>
+                        <ul class="post__list">
+                            <li class="post__list-item post__text">Inpatient Detoxification</li>
+                            <li class="post__list-item post__text">Inpatient Residential Rehabilitation</li>
+                            <li class="post__list-item post__text">Partial Hospitalization Program</li>
+                            <li class="post__list-item post__text">Intensive Outpatient Treatment</li>
+                            <li class="post__list-item post__text">The Seven Challenges Treatment Program</li>
+                            <li class="post__list-item post__text">Stonegate Residential Addiction</li>
+                            <li class="post__list-item post__text">Suboxone Opioid addiction treatment</li>
+                        </ul>
+                        <p class="post__text">
+                            Under these programs and treatments are supplementary counseling. It helps patients go through the harder parts of the treatment.
+                            Withdrawal can cause anxiety that can affect a patient’s behavior. Counselor can work on this.
+                        </p>
+                        <ul class="post__list">
+                            <li class="post__list-item post__text">Group therapy is a kind of counseling that exposes a patient to a more social environment. Alcoholics
+                                Anonymous is one of these groups.</li>
+                            <li class="post__list-item post__text">Private Therapy are personal meetings with a counselor. This applies to outpatient and inpatient
+                                treatments.
+                            </li>
+                            <li class="post__list-item post__text">Intensive Residential Programs is for patients who have serious emotional and behavioral issues.
+                                Counselors work with the patient to resolve or manage their issues.</li>
+                        </ul>
+                        <div class="post__img-container">
+                            <img class="post__img" src="img/post_img2.jpg" alt="Hartford Healthcare Rehabilitation Coverage">
+                        </div>
+                        <div class="post__subtitle">Inpatient vs Outpatient</div>
+                        <p class="post__text">
+                            Outpatient care is generally more affordable than inpatient treatments. They offer help for the patient while allowing the
+                            patient to live their normal lives. Outpatient care is advisable for patients whose addiction
+                            doesn’t cause potential harm. Another factor to consider is the other substances that the patients
+                            take. It should not affect the treatment.
+                        </p>
+                        <p class="post__text">
+                            Inpatient care is more suited for cases where the patient requires constant monitoring. Patients need to stay in rehab centers
+                            for a couple of weeks, sometimes months. Hartford’s plan can cover luxury rehab centers that
+                            provide more amenities. These amenities include swimming pools, gym equipment and gourmet food.
+                        </p>
+                        <p class="post__text">
+                            Often, doctors recommend a supplementary outpatient program after a successful inpatient treatment.
+                        </p>
+                        <p class="post__text">
+                            Thanks to the Affordable Care Act, insurance companies had made healthcare affordable. Costs are now less of an excuse to
+                            keep us from being healthy citizens. If your alcohol intake concerns you, speak to your health
+                            insurance provider. Same goes if you know someone close to you who is also struggling. It’s never
+                            too late to find help and it’s closer to you than ever.
+                        </p>
+                        <p class="post__text">
+                            Check out this playlist to learn more.
+                        </p>
+                        <div class="post__video-container">
+                                <iframe class="post__video" src="https://www.youtube.com/embed/Gxa_pXdnilk" frameborder="0" allowfullscreen></iframe>    
+                        </div>
+                        
+                    </article>
+
+                    <a class="post__back-link" href="blog.html">« Back to the blog</a>
+                </div>
+                <div class="col-lg-4">
+                    //= template/rss.html
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="bg-dark">
+        //= template/request-form.html
+    </div>
+
+    //= template/footer.html

@@ -1,0 +1,21 @@
+.rss {
+
+    &__title {
+        @extend .post__title;
+        margin: 0;
+        margin-bottom: 15px;
+    }
+
+    &__banner {
+        padding: 33px 24px;
+        background-image: url('../img/call_img.jpg');
+        background-position: center;
+        font-family: $ffRoboto-Medium;
+        font-size: 2.25rem;
+        color: #ffffff;
+    }
+
+    &__banner-number {
+        margin-top: 230px;
+    }
+}
