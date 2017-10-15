@@ -2,6 +2,7 @@
 //= ../../node_modules/waypoints/lib/jquery.waypoints.min.js
 //= ../../node_modules/jquery.counterup/jquery.counterup.js
 //= ../../node_modules/slick-carousel/slick/slick.min.js
+//= svg4everybody.min.js
 
 $(document)
     .ready(function () {
@@ -9,6 +10,9 @@ $(document)
         var menuHeight = mainMenu.outerHeight();
         var slider = $('.slider__body');
         var header = $('.header');
+
+        // support svg for ie
+        svg4everybody();
 
         slider.slick({arrows: false, autoplay: true, autoplaySpeed: 5000});
 
