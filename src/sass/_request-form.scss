@@ -31,7 +31,7 @@
             min-width: 200px;
         }
 
-        @include respond-to (phone-lend) {
+        @include respond-to (tablet) {
             margin-top: 10px;
             margin-left: 0;
             margin-right: 0;
@@ -50,10 +50,10 @@
         transition: $tr3s;
         
         &:hover {
-            background-color: #f4d130;
+            background-color: #609d1f;
         }
 
-        @include respond-to (phone-lend) {
+        @include respond-to (tablet) {
             margin-right: 0;
             margin-left: 0;
             min-width: 100%;

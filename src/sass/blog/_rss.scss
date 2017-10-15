@@ -1,7 +1,9 @@
 .rss {
 
     &__title {
-        @extend .post__title;
+        font-family: $ffRoboto-Medium;
+        font-size: 1.5rem;
+        font-weight: 500;
         margin: 0;
         margin-bottom: 15px;
 

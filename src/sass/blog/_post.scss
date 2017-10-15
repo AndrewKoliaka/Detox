@@ -19,13 +19,25 @@
         margin-top: 18px;
     }
 
-    &__title {
-        display: inline-block;
+    &__article-title {
         margin-top: 12px;
+        font-family: $ffRoboto-Medium;
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    &__title {
+        display: block;
+        margin-top: 12px;
+        font-family: $ffRoboto-Medium;
+        font-size: 1.5rem;
+        font-weight: 500;
 
         &:hover {
+            color: #0265d4;
+
             h2 {
-                color: #0265d4;
+                color: inherit;
             }
         }
 
