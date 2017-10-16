@@ -4,4 +4,12 @@
     @include respond-to (tablet) {
         padding: 40px 0;
     }
+
+    &__back-link {
+        color: #0265d4;
+        
+        &:hover {
+            color: #044c9c;
+        }
+    }
 }

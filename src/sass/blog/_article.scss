@@ -1,0 +1,116 @@
+.article {
+    margin-bottom: 45px;
+
+    figure {
+        margin: 20px 0;
+
+        &:first-of-type {
+            margin-top: 0;
+        }
+
+        img {
+            max-height: 100%;
+            max-width: 100%;
+        }
+    }
+
+    div {
+        display: inline-block;
+        margin-right: 15px;
+        color: #a3a3a3;
+        font-size: .875rem;
+        line-height: 1.5rem;
+
+        svg {
+            @extend .post-icon-text__icon;
+        }
+
+        span {
+            @extend .post-icon-text__text
+        }
+    }
+
+    // youtube video wrapper
+    footer {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 */
+        padding-top: 25px;
+        margin: 20px 0;
+        height: 0;
+
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    h2 {
+        margin-top: 12px;
+        font-family: $ffRoboto-Medium;
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    h3 {
+        margin: 10px 0;
+        font-family: $ffRoboto-Medium;
+        font-size: 1.25em;
+        font-weight: 500;
+        color: #282828;
+    }
+
+    ul {
+        margin-left: 25px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    li {
+        color: #666666;
+        margin-top: 9px;
+        margin-right: 9px;
+    }
+
+    a {
+        display: block;
+        margin-top: 12px;
+        font-family: $ffRoboto-Medium;
+        font-size: 1.5rem;
+        font-weight: 500;
+        transition: $tr3s;
+
+        &:hover {
+            color: #044c9c;
+
+            h2 {
+                color: #0265d4;
+            }
+        }
+
+        h2 {
+            margin: 0;
+            font-family: $ffRoboto-Medium;
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: #282828;
+            transition: $tr3s;
+        }
+    }
+
+    p {
+        @extend .section__text;
+        margin: 9px 0;
+
+        a {
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            font-family: inherit;
+            font-size: inherit;
+            color: #0265d4;
+        }
+    }
+}

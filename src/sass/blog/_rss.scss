@@ -14,6 +14,7 @@
     }
 
     &__banner {
+        display: block;
         padding: 33px 24px;
         background-image: url('../img/call_img.jpg');
         background-repeat: no-repeat;
@@ -30,5 +31,36 @@
 
     &__banner-number {
         margin-top: 230px;
+    }
+
+    &__post {
+        margin-bottom: 30px;
+    }
+    
+    &__post-title {
+        display: block;
+        margin-top: 12px;
+        line-height: 1.875rem;
+        font-family: $ffRoboto-Medium;
+        font-weight: 500;
+        font-size: 1.25rem;
+        transition: $tr3s;
+
+        &:hover {
+            color: #0265d4;
+        }
+    }
+
+    &__post-text {
+        @extend .section__text;
+        margin: 9px 0;
+    }
+
+    &__post-read-more {
+        color: #0265d4;
+        
+        &:hover {
+            color: #044c9c;
+        }
     }
 }
