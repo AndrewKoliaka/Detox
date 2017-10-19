@@ -28,10 +28,6 @@
         }
 
         @include respond-to (tablet) {
-            min-width: 200px;
-        }
-
-        @include respond-to (tablet) {
             margin-top: 10px;
             margin-left: 0;
             margin-right: 0;
