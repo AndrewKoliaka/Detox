@@ -14,7 +14,7 @@ $(document)
         // support svg for ie
         svg4everybody();
 
-        slider.slick({arrows: false, autoplay: true, autoplaySpeed: 5000});
+        slider.slick({arrows: false, autoplay: false, autoplaySpeed: 5000});
 
         $('.video__play-icon').click(function (event) {
 

@@ -26,6 +26,41 @@
                 }
             }
         }
+        > .menu-item {
+            display: inline-block;
+            margin-left: 20px;
+
+            &:first-child {
+                margin-left: 0;
+            }
+
+            @media screen and (max-width: 1200px) {
+                margin-left: 10px;
+            }
+
+            @include respond-to (tablet) {
+                display: block;
+                margin-left: 20px;
+
+                &:first-child {
+                    margin-left: 20px;
+                }
+            }
+
+            @include respond-to (phone-lend) {
+                margin-top: 20px;
+            }
+
+            > a {
+                display: inline-block;
+                vertical-align: middle;
+                transition: $tr3s;
+
+                &:hover {
+                    color: #ffffff;
+                }
+            }
+        }
     }
 
     &__list-element {
