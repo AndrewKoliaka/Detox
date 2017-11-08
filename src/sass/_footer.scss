@@ -26,7 +26,8 @@
                 }
             }
         }
-        > .menu-item {
+
+        .menu-item {
             display: inline-block;
             margin-left: 20px;
 
@@ -51,7 +52,7 @@
                 margin-top: 20px;
             }
 
-            > a {
+            a {
                 display: inline-block;
                 vertical-align: middle;
                 transition: $tr3s;
