@@ -214,6 +214,27 @@ gulp.task('svg:build', function() {
         .pipe(gulp.dest('./public'));
 });
 
+gulp.task('svg:prod', function() {
+    return gulp.src(path.src.svgIcons)
+        .pipe(svgSprite({
+            mode: {
+                symbol: {
+                    dest: "./",
+                    sprite: 'img/sprite'
+                }
+            },
+            shape: {
+                spacing: {
+                    padding: 0
+                }
+            },
+            variables: {
+                mapname: "sprite"
+            }
+        }))
+        .pipe(gulp.dest('./prod'));
+});
+
 gulp.task('build', [
     'html:build',
     'js:build',
@@ -228,7 +249,7 @@ gulp.task('prod', [
     'html:prod',
     'js:prod',
     'sprite-create:prod',
-    'svg:build',
+    'svg:prod',
     'style:prod',
     'fonts:prod',
     'image:prod'

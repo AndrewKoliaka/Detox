@@ -25,7 +25,7 @@ $(document)
 
             playBtn.hide();
             video.play();
-            
+
             $(video).on('ended', function(){
                 playBtn.show();
             });
